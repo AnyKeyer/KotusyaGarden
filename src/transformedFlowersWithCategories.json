@@ -1,0 +1,503 @@
+[
+  {
+    "id": 1,
+    "name": "Астра",
+    "categories": [
+      "Недорогие",
+      "Экономичные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 4,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "astra"
+  },
+  {
+    "id": 2,
+    "name": "Ромашка",
+    "categories": [
+      "Недорогие",
+      "Полевые",
+      "Малостоящие",
+      "Экономичные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "romashka"
+  },
+  {
+    "id": 3,
+    "name": "Нарцисс",
+    "categories": [
+      "Недорогие",
+      "Малостоящие",
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 1,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "nartciss"
+  },
+  {
+    "id": 4,
+    "name": "Лаванда",
+    "categories": [
+      "Недорогие",
+      "Полевые",
+      "Пахнущие"
+    ],
+    "basePrice": 0,
+    "sellPrice": 6,
+    "count": 500,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": true,
+    "imageName": "lavanda"
+  },
+  {
+    "id": 5,
+    "name": "Гиацинт",
+    "categories": [
+      "Недорогие",
+      "Пахнущие",
+      "Нежные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 500,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": true,
+    "imageName": "giacint"
+  },
+  {
+    "id": 6,
+    "name": "Ландыш",
+    "categories": [
+      "Дорогие",
+      "Нежные",
+      "Сдержанные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 1,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "landish"
+  },
+  {
+    "id": 7,
+    "name": "Амариллис",
+    "categories": [
+      "Дорогие",
+      "Роскошные",
+      "Пышные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 10,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "amariliss"
+  },
+  {
+    "id": 8,
+    "name": "Гардения",
+    "categories": [
+      "Дорогие",
+      "Нежные",
+      "Роскошные",
+      "Утончённые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 12,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "gardenia"
+  },
+  {
+    "id": 9,
+    "name": "Магнолия",
+    "categories": [
+      "Дорогие"
+    ],
+    "basePrice": 0,
+    "sellPrice": 20,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "magnolia"
+  },
+  {
+    "id": 10,
+    "name": "Камелия",
+    "categories": [
+      "Дорогие",
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 16,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "kamelia"
+  },
+  {
+    "id": 11,
+    "name": "Георгин",
+    "categories": [
+      "Дорогие"
+    ],
+    "basePrice": 0,
+    "sellPrice": 6,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "georgin"
+  },
+  {
+    "id": 12,
+    "name": "Лотос",
+    "categories": [
+      "Дорогие"
+    ],
+    "basePrice": 0,
+    "sellPrice": 60,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "lotos"
+  },
+  {
+    "id": 13,
+    "name": "Плюмерия",
+    "categories": [
+      "Дорогие"
+    ],
+    "basePrice": 0,
+    "sellPrice": 30,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "plumeria"
+  },
+  {
+    "id": 14,
+    "name": "Жасмин",
+    "categories": [
+      "Шикарные",
+      "Пахнущие",
+      "Романтические",
+      "Утончённые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 8,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "jasmin"
+  },
+  {
+    "id": 15,
+    "name": "Стрелиция",
+    "categories": [
+      "Шикарные",
+      "Экзотические",
+      "Стильные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 14,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "strelicia"
+  },
+  {
+    "id": 16,
+    "name": "Нигелла",
+    "categories": [
+      "Шикарные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "nigella"
+  },
+  {
+    "id": 17,
+    "name": "Лапчатка",
+    "categories": [
+      "Шикарные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 3,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "lapchatka"
+  },
+  {
+    "id": 18,
+    "name": "Мак",
+    "categories": [
+      "Полевые",
+      "Малостоящие",
+      "Яркие"
+    ],
+    "basePrice": 0,
+    "sellPrice": 4,
+    "count": 500,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": true,
+    "imageName": "mak"
+  },
+  {
+    "id": 19,
+    "name": "Василек",
+    "categories": [
+      "Полевые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 1,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "vasilek"
+  },
+  {
+    "id": 20,
+    "name": "Лютик",
+    "categories": [
+      "Полевые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 1,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "lutik"
+  },
+  {
+    "id": 21,
+    "name": "Зверобой",
+    "categories": [
+      "Полевые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 3,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "zveroboy"
+  },
+  {
+    "id": 22,
+    "name": "Колокольчик",
+    "categories": [
+      "Полевые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "kolokolcik"
+  },
+  {
+    "id": 23,
+    "name": "Календула",
+    "categories": [
+      "Полевые"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "calendula"
+  },
+  {
+    "id": 24,
+    "name": "Геликония",
+    "categories": [
+      "Экзотические"
+    ],
+    "basePrice": 0,
+    "sellPrice": 10,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "geliconia"
+  },
+  {
+    "id": 25,
+    "name": "Протея",
+    "categories": [
+      "Экзотические"
+    ],
+    "basePrice": 0,
+    "sellPrice": 20,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "protea"
+  },
+  {
+    "id": 26,
+    "name": "Глориоза",
+    "categories": [
+      "Экзотические"
+    ],
+    "basePrice": 0,
+    "sellPrice": 12,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "glorisa"
+  },
+  {
+    "id": 27,
+    "name": "Альпиния",
+    "categories": [
+      "Экзотические"
+    ],
+    "basePrice": 0,
+    "sellPrice": 16,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "alpinia"
+  },
+  {
+    "id": 28,
+    "name": "Подсолнух",
+    "categories": [
+      "Радостные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 500,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": true,
+    "imageName": "podsolnuh"
+  },
+  {
+    "id": 29,
+    "name": "Лилия",
+    "categories": [
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 10,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "lily"
+  },
+  {
+    "id": 30,
+    "name": "Хризантема",
+    "categories": [
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 4,
+    "count": 500,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": true,
+    "imageName": "hrisantema"
+  },
+  {
+    "id": 31,
+    "name": "Гвоздика",
+    "categories": [
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 2,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "gvozdika"
+  },
+  {
+    "id": 32,
+    "name": "Калла",
+    "categories": [
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 6,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "calla"
+  },
+  {
+    "id": 33,
+    "name": "Ирис",
+    "categories": [
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 3,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "iris"
+  },
+  {
+    "id": 34,
+    "name": "Антуриум",
+    "categories": [
+      "Траурные"
+    ],
+    "basePrice": 0,
+    "sellPrice": 10,
+    "count": 1,
+    "upgradeLevel": 0,
+    "upgradeMultiplier": 10,
+    "isOpen": false,
+    "imageName": "anturium"
+  }
+]
