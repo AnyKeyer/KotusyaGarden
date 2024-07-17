@@ -7,6 +7,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   server: {
     host: '0.0.0.0', // Слушать на всех сетевых интерфейсах
+    port: 5173,       // Укажите нужный порт
     proxy: {
       '/api': {
         target: 'http://localhost:3000', // Адрес вашего Express сервера
