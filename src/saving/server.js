@@ -16,7 +16,7 @@ app.use(cors());
 app.get('/getCookieData', (req, res) => {
     try {
         // Читаем данные из JSON-файла
-        const jsonData = fs.readFileSync('savedData.json', 'utf8');
+        const jsonData = fs.readFileSync('./src/saving/savedData.json', 'utf8');
         const data = JSON.parse(jsonData);
 
         // Отправляем данные на клиент в виде JSON
@@ -37,7 +37,7 @@ app.post('/saveData', (req, res) => {
 
     try {
         const jsonData = JSON.stringify(data, null, 2);
-        fs.writeFileSync('savedData.json', jsonData);
+        fs.writeFileSync('./src/saving/savedData.json', jsonData);
 
         // Отправляем данные на клиент в виде JSON
         res.json(data);
@@ -50,10 +50,10 @@ app.post('/saveData', (req, res) => {
 // Запускаем сервер на указанном порту
 app.listen(port, () => {
     console.log(`Сервер запущен на порту ${port}`);
-    if (!fs.existsSync('savedData.json')) {
+    if (!fs.existsSync('./src/saving/savedData.json')) {
         const initialObjet = init();
-        
-        fs.writeFileSync('savedData.json', JSON.stringify(initialObjet));
+
+        fs.writeFileSync('./src/saving/savedData.json', JSON.stringify(initialObjet));
 
     }
 
@@ -62,20 +62,20 @@ app.listen(port, () => {
 app.get('/selectRandomDialog', (req, res) => {
     try {
         // Читаем данные из queries.json
-        const jsonData = fs.readFileSync('../queries.json', 'utf8');
-        const savedData = fs.readFileSync('./savedData.json', 'utf8');
+        const jsonData = fs.readFileSync('./src/queries.json', 'utf8');
+        const savedData = fs.readFileSync('./src/saving/savedData.json', 'utf8');
 
         const dialogs = JSON.parse(jsonData);
         const parsedSavedData = JSON.parse(savedData);
-        
 
-        const openedFlowers = parsedSavedData.flowers.filter((el) => el.isOpen );
+
+        const openedFlowers = parsedSavedData.flowers.filter((el) => el.isOpen);
         const openedCategories = new Set(...openedFlowers.map(flower => flower.categories));
 
         // Читаем данные из usedDialogsIds.json
         let usedIds = [];
-        if (fs.existsSync('usedDialogsIds.json')) {
-            const usedIdsJson = fs.readFileSync('usedDialogsIds.json', 'utf8');
+        if (fs.existsSync('./src/saving/usedDialogsIds.json')) {
+            const usedIdsJson = fs.readFileSync('./src/saving/usedDialogsIds.json', 'utf8');
             usedIds = JSON.parse(usedIdsJson);
         }
 
@@ -102,7 +102,7 @@ app.get('/selectRandomDialog', (req, res) => {
         const randomDialog = availableDialogs[Math.floor(Math.random() * availableDialogs.length)];
 
         // Читаем файлы изображений в папке public/images/customers
-        const imageDir = path.join('../../public/images/customers');
+        const imageDir = path.join('public/images/customers');
         const imageFiles = fs.readdirSync(imageDir);
 
         // Выбираем случайное изображение
@@ -113,7 +113,7 @@ app.get('/selectRandomDialog', (req, res) => {
 
         // Записываем id выбранного диалога в usedDialogsIds.json
         usedIds.push(randomDialog.id);
-        fs.writeFileSync('usedDialogsIds.json', JSON.stringify(usedIds));
+        fs.writeFileSync('./src/saving/usedDialogsIds.json', JSON.stringify(usedIds));
 
         // Отправляем выбранный диалог на клиент в виде JSON
         res.json(randomDialog);
@@ -130,7 +130,7 @@ function init() {
         experience: 1200,
         day: 1,
         unlockPrice: 4000,
-        flowers: JSON.parse(fs.readFileSync("../transformedFlowersWithCategories.json")),
+        flowers: JSON.parse(fs.readFileSync("./src/transformedFlowersWithCategories.json")),
         flowersQueue: []
     };
 }
